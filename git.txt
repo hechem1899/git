@@ -1,0 +1,79 @@
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git (master)
+$ mkdir learn_git_again
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git (master)
+$ cd learn_git_again
+
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ touch third.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git inti
+git: 'inti' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git init
+Initialized empty Git repository in C:/Users/ADMIN/Desktop/GoMyCode/learn git/learn_git_again/.git/
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git add third.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) ef18e2e] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git log
+commit ef18e2e3be0306cf5cb3771b777fdaf5fc676c32 (HEAD -> master)
+Author: unknown <boukhris.hechem@gmail.com>
+Date:   Thu Jul 2 12:09:51 2020 +0100
+
+    adding third.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ touch fourth.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git add fourth.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git commit -m"adding fourth.txt"
+[master a406d7a] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git rm --cached "third.txt"
+rm 'third.txt'
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git add "third.txt"
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git commit -m"removing third.txt"
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$ git log
+commit a406d7a12675b664fff317d046352077a17d81a1 (HEAD -> master)
+Author: unknown <boukhris.hechem@gmail.com>
+Date:   Thu Jul 2 12:11:07 2020 +0100
+
+    adding fourth.txt
+
+commit ef18e2e3be0306cf5cb3771b777fdaf5fc676c32
+Author: unknown <boukhris.hechem@gmail.com>
+Date:   Thu Jul 2 12:09:51 2020 +0100
+
+    adding third.txt
+
+ADMIN@DESKTOP-4TFOSUD MINGW64 ~/Desktop/GoMyCode/learn git/learn_git_again (master)
+$
